@@ -55,8 +55,7 @@ Complete [labs/00-setup.md](labs/00-setup.md) first. It covers prerequisites, th
 
 ### Reference
 
-- [labs/07-guardrails.md](labs/07-guardrails.md) – rules that apply to every lab
-- [labs/08-practice-data.md](labs/08-practice-data.md) – structure of the practice data workbook
+- [labs/07-practice-data.md](labs/07-practice-data.md) – structure of the practice data workbook
 
 ## Suggested learning path
 
