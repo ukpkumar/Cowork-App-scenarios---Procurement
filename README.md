@@ -1,38 +1,66 @@
-# Cowork App Scenarios – Procurement
-Prompts and scenarios for demonstrating Microsoft Copilot Cowork apps, skills and plugins to a procurement team.
+# Cowork App Scenarios – Procurement Lab Guide
 
-All examples use fictional practice data. Replace every placeholder in square brackets before use:
+A hands-on lab guide for building procurement apps, skills and plugins with Microsoft Copilot Cowork.
 
-| Placeholder | Replace with |
-|---|---|
-| [Company] | The organisation's name |
-| [Head office] | The site the practice tender covers |
-| [Currency] | The currency used in your practice data |
-| [Practice tender folder], [Practice supplier folder], [Practice contract folder], [Practice spend folder] | Location of the practice files |
-| [Template library location] | Location of the approved PowerPoint template |
-| [DoA approvers], [DoA levels], [Delegation of Authority threshold] | The organisation's Delegation of Authority |
-| [Sourcing system] | The organisation's sourcing / ERP system |
-| [Sanctions/financial screening source] | The screening source the team uses |
-| [Pilot sponsor] | The executive sponsor for a pilot |
+Every lab follows the same pattern: read the scenario, copy the prompt, review the plan Cowork shows you, approve, then check the result against the checklist. All data is fictional practice data.
 
-## Contents
+## Before you start
 
-| File | What it covers |
-|---|---|
-| [session-outline.md](session-outline.md) | 60-minute session agenda and flow |
-| [scenarios/01-bid-to-award.md](scenarios/01-bid-to-award.md) | Hero app: bid-to-award workflow |
-| [scenarios/02-supplier-scorecard.md](scenarios/02-supplier-scorecard.md) | App: supplier performance and risk scorecard |
-| [scenarios/03-contract-radar.md](scenarios/03-contract-radar.md) | App: contract renewal and obligations radar |
-| [scenarios/04-spend-savings.md](scenarios/04-spend-savings.md) | App: spend and savings tracker |
-| [skills-and-plugins/skills-and-plugins.md](skills-and-plugins/skills-and-plugins.md) | Procurement skills and a team plugin |
-| [guardrails.md](guardrails.md) | Guardrails for procurement use |
-| [demo-data.md](demo-data.md) | Structure of the practice data workbook used in the demos |
+Complete [labs/00-setup.md](labs/00-setup.md) first. It covers prerequisites, the practice data and the placeholders to replace.
 
-## How to use
+## Lab index
 
-1. Prepare the practice data workbook described in [demo-data.md](demo-data.md).
-2. Open Copilot Cowork and attach the workbook (or point to the practice folder).
-3. Paste the "Try this prompt" from a scenario file and review the plan and data access before approving.
-4. Use the "Then try this" prompt to show plain-language refinement.
+### Part A – Apps (/app)
 
-Apps built this way are prototypes until IT confirms data connections and sharing.
+| Lab | App | File |
+|---|---|---|
+| A1 | Bid-to-award workspace | [labs/01-app-bid-to-award.md](labs/01-app-bid-to-award.md) |
+| A2 | Supplier performance and risk scorecard | [labs/02-apps-core.md](labs/02-apps-core.md#lab-a2--supplier-performance-and-risk-scorecard) |
+| A3 | Contract renewal and obligations radar | [labs/02-apps-core.md](labs/02-apps-core.md#lab-a3--contract-renewal-and-obligations-radar) |
+| A4 | Spend and savings tracker | [labs/02-apps-core.md](labs/02-apps-core.md#lab-a4--spend-and-savings-tracker) |
+| A5 | Sourcing request intake and triage | [labs/03-apps-sourcing.md](labs/03-apps-sourcing.md#lab-a5--sourcing-request-intake-and-triage) |
+| A6 | Sourcing pipeline and workload board | [labs/03-apps-sourcing.md](labs/03-apps-sourcing.md#lab-a6--sourcing-pipeline-and-workload-board) |
+| A7 | Tender clarification log | [labs/03-apps-sourcing.md](labs/03-apps-sourcing.md#lab-a7--tender-clarification-log) |
+| A8 | Negotiation preparation cockpit | [labs/03-apps-sourcing.md](labs/03-apps-sourcing.md#lab-a8--negotiation-preparation-cockpit) |
+| A9 | Conflict-of-interest declarations register | [labs/03-apps-sourcing.md](labs/03-apps-sourcing.md#lab-a9--conflict-of-interest-declarations-register) |
+| A10 | Supplier onboarding tracker | [labs/04-apps-supplier-and-p2p.md](labs/04-apps-supplier-and-p2p.md#lab-a10--supplier-onboarding-tracker) |
+| A11 | Supplier ESG and risk questionnaire tracker | [labs/04-apps-supplier-and-p2p.md](labs/04-apps-supplier-and-p2p.md#lab-a11--supplier-esg-and-risk-questionnaire-tracker) |
+| A12 | Three-way match exceptions queue | [labs/04-apps-supplier-and-p2p.md](labs/04-apps-supplier-and-p2p.md#lab-a12--three-way-match-exceptions-queue) |
+| A13 | Contract price compliance checker | [labs/04-apps-supplier-and-p2p.md](labs/04-apps-supplier-and-p2p.md#lab-a13--contract-price-compliance-checker) |
+| A14 | SLA service-credit calculator | [labs/04-apps-supplier-and-p2p.md](labs/04-apps-supplier-and-p2p.md#lab-a14--sla-service-credit-calculator) |
+
+### Part B – Skills
+
+| Lab | Skill | File |
+|---|---|---|
+| B1 | Procurement branding | [labs/05-skills.md](labs/05-skills.md#lab-b1--procurement-branding-skill) |
+| B2 | Bid evaluation | [labs/05-skills.md](labs/05-skills.md#lab-b2--bid-evaluation-skill) |
+| B3 | Supplier letters | [labs/05-skills.md](labs/05-skills.md#lab-b3--supplier-letters-skill) |
+| B4 | RFP drafting | [labs/05-skills.md](labs/05-skills.md#lab-b4--rfp-drafting-skill) |
+| B5 | Clarification response | [labs/05-skills.md](labs/05-skills.md#lab-b5--clarification-response-skill) |
+| B6 | Negotiation brief | [labs/05-skills.md](labs/05-skills.md#lab-b6--negotiation-brief-skill) |
+| B7 | Contract summary | [labs/05-skills.md](labs/05-skills.md#lab-b7--contract-summary-skill) |
+| B8 | Supplier review pack | [labs/05-skills.md](labs/05-skills.md#lab-b8--supplier-review-pack-skill) |
+
+### Part C – Plugins
+
+| Lab | Plugin | File |
+|---|---|---|
+| C1 | Procurement plugin (all-in-one) | [labs/06-plugins.md](labs/06-plugins.md#lab-c1--procurement-plugin) |
+| C2 | Sourcing event plugin | [labs/06-plugins.md](labs/06-plugins.md#lab-c2--sourcing-event-plugin) |
+| C3 | Supplier lifecycle plugin | [labs/06-plugins.md](labs/06-plugins.md#lab-c3--supplier-lifecycle-plugin) |
+| C4 | Contract management plugin | [labs/06-plugins.md](labs/06-plugins.md#lab-c4--contract-management-plugin) |
+| C5 | Procure-to-pay exceptions plugin | [labs/06-plugins.md](labs/06-plugins.md#lab-c5--procure-to-pay-exceptions-plugin) |
+| C6 | Category management plugin | [labs/06-plugins.md](labs/06-plugins.md#lab-c6--category-management-plugin) |
+
+### Reference
+
+- [labs/07-guardrails.md](labs/07-guardrails.md) – rules that apply to every lab
+- [labs/08-practice-data.md](labs/08-practice-data.md) – structure of the practice data workbook
+
+## Suggested learning path
+
+1. Setup, then Lab A1 (the hero scenario).
+2. Any two labs from A2–A14 that match your role.
+3. Lab B1, then one more skill from B2–B8.
+4. Lab C1, then the plugin that matches your team.
